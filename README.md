@@ -118,6 +118,8 @@ I/O Devices
 	R7, R6, R5, R4, R3, R2, R1, R0 (8 bit)
 
 
-
 ### MMX | XMM
+
+`006...`
+
 
