@@ -120,6 +120,18 @@ I/O Devices
 
 ### MMX | XMM
 
+## Sections
+
+- `section .data` The data section is used for declaring initialized data or constants.
+- `section .bss` The bss section is used for declaring variables. 
+- `section .text` The text section is used for keeping the actual code.
+
 `006...`
+
+## Look at
+[Tutorialspoint](https://www.tutorialspoint.com/assembly_programming/assembly_tutorial.pdf)
+[The Art of Assembly Language](http://www.staroceans.org/kernel-and-driver/The.Art.of.Assembly.Language.2nd.Edition.pdf)
+[x86-64 Assembly](http://www.egr.unlv.edu/~ed/assembly64.pdf)
+[Oracle ASM](https://docs.oracle.com/cd/E19641-01/802-1948/802-1948.pdf)
 
 
