@@ -128,7 +128,8 @@ I/O Devices
 
 ```asm
 section .text
-global main ;must be declared for linker (ld) main: ;tells linker entry point 
+global main ;must be declared for linker (ld) 
+main:       ;tells linker entry point 
 mov edx,len ;message length 
 mov ecx,msg ;message to write 
 mov ebx,1   ;file descriptor (stdout) 
