@@ -126,6 +126,10 @@ I/O Devices
 - `section .bss` The bss section is used for declaring variables. 
 - `section .text` The text section is used for keeping the actual code.
 
+
+## System calls
+You can find it [here](system_call.md)
+
 ```asm
 section .text
 global main ;must be declared for linker (ld) 
@@ -144,7 +148,7 @@ len equ $ - msg ;length of our dear string
 ```
 
 #### Compiling and Linking an Assembly Program in NASM
-```
+```shell
 nasm -f elf hello.asm
 ld -m elf_i386 -s -o hello hello.o
 ```
