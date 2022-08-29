@@ -182,6 +182,77 @@ int 0x80    ; call kernel
 ```
 *the value to put in EAX before you call int 80h*
 
+## Addressing Modes
+
+The three basic modes of addressing are:
+- Register addressing
+- Immediate addressing
+- Memory addressing
+
+
+### The MOV Instruction
+Syntax of the MOV instruction is:
+```asm
+MOV destination, source
+```
+
+The MOV instruction may have one of the following five forms:
+```asm
+MOV register, register
+MOV register, immediate
+MOV memory, immediate
+MOV register, memory
+MOV memory, register
+```
+
+### Type specifiers
+
+| Type Specifier | Bytes addressed |
+|----------------|-----------------|
+| `BYTE`	 | 1	 	   |
+| `WORD`	 | 2		   |
+| `DWORD`	 | 4 		   |
+| `QWORD`	 | 8 		   |
+| `TBYTE`	 | 10 		   |
+
+
+## Assembly Variables
+
+|Directive |Purpose           |Storage Space     |
+|----------|------------------|------------------|
+|`DB`      |Define Byte       |allocates 1 byte  |
+|`DW`      |Define Word       |allocates 2 bytes |
+|`DD`      |Define Doubleword |allocates 4 bytes |
+|`DQ`      |Define Quadword   |allocates 8 bytes |
+|`DT`      |Define Ten Bytes  |allocates 10 bytes|
+
+
+```asm
+choice DB 'y'
+number DW 12345
+neg_number DW -12345
+big_number DQ 123456789
+real_number1 DD 1.234
+real_number2 DQ 123.456
+```
+
+### Allocating Storage Space for Uninitialized Data
+
+There are five basic forms of the reserve directive:
+|Directive | Purpose 		  |
+|----------|----------------------|
+|`RESB`    |Reserve a Byte        |
+|`RESW`    | Reserve a Word       |
+|`RESD`    | Reserve a Doubleword |
+|`RESQ`    |Reserve a Quadword    |
+|`REST`    | Reserve a Ten Bytes  |
+
+**Note that:**
+- Each byte of character is stored as its ASCII value in hexadecimal
+- Each decimal value is automatically converted to its 16-bit binary equivalent and stored as a hexadecimal number
+- Processor uses the little-endian byte ordering
+- Negative numbers are converted to its 2's complement representation
+- Short and long floating-point numbers are represented using 32 or 64 bits, respectively
 
 
 
