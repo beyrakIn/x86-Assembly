@@ -62,10 +62,8 @@ I/O Devices
 - Protected Mode
 - System Management Mode
 
-
-### Memory Layout
-
-![ML](img/memoryLayout.jpg)
+## Memory Layout
+![Memory Layout](img/memorylayout.png)
 
 
 ## Registers
@@ -141,7 +139,7 @@ I/O Devices
 
 
 ## System calls
-Look at  `system_call.md`  ![here](system_call.md)
+You can find it [here](system_call.md)
 
 ```asm
 section .text
