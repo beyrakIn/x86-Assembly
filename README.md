@@ -69,7 +69,11 @@ I/O Devices
 
 ###### Maps
 `-/proc/pid/maps`
-	command: `pmap`
+```shell
+➜ pmap 
+Usage:
+ pmap [options] PID [PID ...]
+```
 
 ## Registers
 
@@ -269,6 +273,17 @@ There are five basic forms of the reserve directive:
 - Processor uses the little-endian byte ordering
 - Negative numbers are converted to its 2's complement representation
 - Short and long floating-point numbers are represented using 32 or 64 bits, respectively
+
+
+## Logical Instructions
+
+|SN |Instruction |Format                  |
+|---|------------|------------------------|
+|1  | `AND`        | `AND operand1, operand2` |
+|2  | `OR`         | `OR operand1, operand2`  |
+|3  | `XOR`        | `XOR operand1, operand2` |
+|4  | `TEST`       | `TEST operand1, operand2`|
+|5  | `NOT`        | `NOT operand1`           |
 
 ## Look at
 [Tutorialspoint](https://www.tutorialspoint.com/assembly_programming/assembly_tutorial.pdf)
