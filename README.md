@@ -65,6 +65,11 @@ I/O Devices
 ## Memory Layout
 ![Memory Layout](img/memorylayout.png)
 
+	Stack <-> (Shared Libs + Mappings) <-> Heap
+
+###### Maps
+`-/proc/pid/maps`
+	command: `pmap`
 
 ## Registers
 
@@ -264,9 +269,6 @@ There are five basic forms of the reserve directive:
 - Processor uses the little-endian byte ordering
 - Negative numbers are converted to its 2's complement representation
 - Short and long floating-point numbers are represented using 32 or 64 bits, respectively
-
-
-
 
 ## Look at
 [Tutorialspoint](https://www.tutorialspoint.com/assembly_programming/assembly_tutorial.pdf)
