@@ -148,7 +148,7 @@ Usage:
 
 
 ## System calls
-You can find it [here](system_call.md)
+You can find it [here](SYSTEM_CALL.md)
 
 ```asm
 section .text
@@ -284,6 +284,33 @@ There are five basic forms of the reserve directive:
 |3  | `XOR`        | `XOR operand1, operand2` |
 |4  | `TEST`       | `TEST operand1, operand2`|
 |5  | `NOT`        | `NOT operand1`           |
+
+
+## Assembly Conditions
+
+**Unconditional jump**  -> This is performed by the JMP instruction. Conditional execution often involves a transfer of control to the address of an instruction that does not follow the currently executing instruction. Transfer of control may be forward to execute a new set of instructions, or backward to re-execute the same steps.
+
+**Conditional jump** -> This is performed by a set of jump instructions j depending upon the condition. The conditional instructions transfer the control by breaking the sequential flow and they do it by changing the offset value in IP.
+
+### The CMP Instruction
+```asm
+CMP destination, source
+```
+
+### Unconditional Jump
+```asm
+JMP label
+```
+
+### Conditional Jump
+| Instruction | Description                             | Flags tested |
+|-------------|-----------------------------------------|--------------|
+|JE/JZ        | Jump Equal or Jump Zero                 | ZF           |
+|JNE/JNZ      | Jump not Equal or Jump Not Zero         | ZF           |
+|JG/JNLE      | Jump Greater or Jump Not Less/Equal     | OF, SF, ZF   |
+|JGE/JNL      | Jump Greater/Equal or Jump Not Less     | OF, SF       |
+|JL/JNGE      | Jump Less or Jump Not Greater/Equal     | OF, SF       |
+|JLE/JNG      | Jump Less/Equal or Jump Not Greater     | OF, SF, Z    |
 
 ## Look at
 [Tutorialspoint](https://www.tutorialspoint.com/assembly_programming/assembly_tutorial.pdf)
