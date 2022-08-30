@@ -1,9 +1,5 @@
 # System Calls
 
-*path:* `/usr/src/linux-headers-5.8.0-55-generic/arch/x86/include/generated/uapi/asm`
-*file:* `unistd_32.h`
-
-
 ```c
 #ifndef _UAPI_ASM_UNISTD_32_H
 #define _UAPI_ASM_UNISTD_32_H

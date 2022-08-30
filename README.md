@@ -56,6 +56,18 @@ I/O Devices
 - **Registers** - Internal memory locations used as *variables*
 - **Flags** - Used to indicate various *event* when execution is happening
 
+
+## CPU Modes for IA-32
+- Real Mode
+- Protected Mode
+- System Management Mode
+
+
+### Memory Layout
+
+![ML](img/memoryLayout.jpg)
+
+
 ## Registers
 
 	- General Purpose Registers
@@ -112,13 +124,14 @@ I/O Devices
 	C Indicates a Control Flag
 	X Indicates a System Flag
 
-- **EIP** - Instruction Pointer
+- **EIP** - Instruction Pointer 
 
-### Floating Point Unit or x87
+### (FPU) Floating Point Unit or x87
 	R7, R6, R5, R4, R3, R2, R1, R0 (8 bit)
 
 
 ### MMX | XMM
+	TODO:- On the way
 
 ## Sections
 
@@ -128,7 +141,7 @@ I/O Devices
 
 
 ## System calls
-You can find it [here](system_call.md)
+Look at  `system_call.md`  ![here](system_call.md)
 
 ```asm
 section .text
@@ -253,6 +266,7 @@ There are five basic forms of the reserve directive:
 - Processor uses the little-endian byte ordering
 - Negative numbers are converted to its 2's complement representation
 - Short and long floating-point numbers are represented using 32 or 64 bits, respectively
+
 
 
 
