@@ -85,7 +85,7 @@ Usage:
 	- XMM Registers
 
 ### General Purpose Registers
-	EAX, EBX, ECX, EDX | AX, BX, CX, DX | AH, BH, CH, DH | AL, BL, CL. DL |
+	EAX, EBX, ECX, EDX | AX, BX, CX, DX | AH, BH, CH, DH | AL, BL, CL, DL |
 	EIP, EBP, ESI, EDI | IP, BP, SI, DI |
 
 `EAX` | Accumulato Register - used for storing operand data and result data
