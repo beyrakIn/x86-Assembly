@@ -56,7 +56,7 @@
 -   **Heap**: dynamic memory: create (allocate) new values , destroy (free) values
 -   **Stack**: local variables and function parameters
 
-![img/Stack](Stack.png)
+![Stack](img/Stack.png)
 
 
 ## CPU Modes for IA-32
