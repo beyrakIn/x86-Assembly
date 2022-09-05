@@ -43,18 +43,20 @@
 
 ## System Organization Basics
 
-```
-CPU 
-Memory
-I/O Devices
-
-(System Bus)
-```
+![X86-architecture](img/X86-architecture.png)
 
 - **Control Unit** - Retrieve/Decode instructions, Retrieve/Store data in memory
 - **Execution Unit** - Actual execution of instruction happens here
 - **Registers** - Internal memory locations used as *variables*
 - **Flags** - Used to indicate various *event* when execution is happening
+
+### Main Memory (RAM)
+-   **Data**: section of the memory that contains the program initial values (static, global)
+-   **Code**: controls what the program does and how it does
+-   **Heap**: dynamic memory: create (allocate) new values , destroy (free) values
+-   **Stack**: local variables and function parameters
+
+![Stack](Stack.png)
 
 
 ## CPU Modes for IA-32
