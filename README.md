@@ -175,6 +175,8 @@ nasm -f elf hello.asm
 ld -m elf_i386 -s -o hello hello.o
 ```
 
+![Assembly2opcode](img/Assembly-to-opcode.png)
+
 ### Linux System Calls
 You can make use of Linux system calls in your assembly programs. You need to take the following steps for
 using Linux system calls in your program:
