@@ -134,6 +134,7 @@ Usage:
 	X Indicates a System Flag
 
 - **EIP** - Instruction Pointer 
+- EIP stores the address of the instruction that will be excuted next but can not be accessed directly. Shellcode relies on indirect approaches to determine EIP.
 
 ### (FPU) Floating Point Unit or x87
 	R7, R6, R5, R4, R3, R2, R1, R0 (8 bit)
