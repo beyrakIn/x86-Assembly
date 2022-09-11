@@ -230,7 +230,14 @@ MOV register, memory
 MOV memory, register
 ```
 
-### Type specifiers
+```asm
+message db 0xAA, 0xBB, 0xCC, 0xDD
+
+mov eax, message    ; moves address into eax
+mov eax, [message]  ; moves value into eax
+```
+
+### Type specifiers / Data Types
 
 | Type Specifier | Bytes addressed |
 |----------------|-----------------|
