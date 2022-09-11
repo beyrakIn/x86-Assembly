@@ -58,6 +58,9 @@
 
 ![Stack](img/Stack.png)
 
+### `PUSH` and `POP` operators
+
+![Stack](img/stack_02.png)
 
 ## CPU Modes for IA-32
 - Real Mode
