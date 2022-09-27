@@ -179,6 +179,7 @@ nasm -f elf hello.asm
 ld -m elf_i386 -s -o hello hello.o
 ```
 
+ **Opcode** -> (**operation code**, also known as **instruction machine code**, **instruction code**, **instruction syllable**, **instruction parcel** or **opstring**)
 ![Assembly2opcode](img/Assembly-to-opcode.png)
 
 ### Linux System Calls
