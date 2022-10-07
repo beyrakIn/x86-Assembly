@@ -93,12 +93,13 @@ Usage:
 	EAX, EBX, ECX, EDX | AX, BX, CX, DX | AH, BH, CH, DH | AL, BL, CL, DL |
 	EIP, EBP, ESI, EDI | IP, BP, SI, DI |
 
-`EAX` | Accumulato Register - used for storing operand data and result data
-`EBX` | Base Register - Pointer to Data
-`ECX` | Counter Register - Loop operations
-`EDX` | Data Register - I/O Pointer
 
-`ESI` / `EDI` | Data Pointer Registers for memory operations
+- `EAX` (accumulator): Arithmetical and logical instructions
+- `EBX` (base): Base pointer for memory addresses
+- `ECX` (counter): Loop, shift, and rotation counter
+- `EDX` (data): I/O port addressing, multiplication, and division
+- `ESI` (source index): Pointer addressing of data and source in string copy operations
+- `EDI` (destination index): Pointer addressing of data and destination in string copy operations
 
 `ESP` | Stack Pointer Register
 `EBP` | Stack Data Pointer Register
