@@ -90,9 +90,8 @@ Usage:
 	- XMM Registers
 
 ### General Purpose Registers
-	EAX, EBX, ECX, EDX | AX, BX, CX, DX | AH, BH, CH, DH | AL, BL, CL, DL |
-	EIP, EBP, ESI, EDI | IP, BP, SI, DI |
 
+![Registers](img/registers.png)
 
 - `EAX` (accumulator): Arithmetical and logical instructions
 - `EBX` (base): Base pointer for memory addresses
@@ -101,8 +100,8 @@ Usage:
 - `ESI` (source index): Pointer addressing of data and source in string copy operations
 - `EDI` (destination index): Pointer addressing of data and destination in string copy operations
 
-`ESP` | Stack Pointer Register
-`EBP` | Stack Data Pointer Register
+- `ESP` | Stack Pointer Register
+- `EBP` | Stack Data Pointer Register
 
 ### Segment Registers
 
