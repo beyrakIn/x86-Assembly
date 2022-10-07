@@ -106,7 +106,7 @@ the register is storing that target address.
 
 - `ESP` (The Stack Pointer)
 - `EBP` (The Base Pointer)
-- `EIP` (Instruction Pointer): stores the address of the instruction that will be excuted next but can not be accessed directly. Shellcode relies on indirect approaches to determine EIP.
+- `EIP` (The Instruction Pointer): stores the address of the instruction that will be excuted next but can not be accessed directly. Shellcode relies on indirect approaches to determine EIP.
 
 ### Segment Registers
 
