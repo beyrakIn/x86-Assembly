@@ -100,8 +100,13 @@ Usage:
 - `ESI` (source index): Pointer addressing of data and source in string copy operations
 - `EDI` (destination index): Pointer addressing of data and destination in string copy operations
 
-- `ESP` | Stack Pointer Register
-- `EBP` | Stack Data Pointer Register
+>A pointer is a reference to an address (or location) in memory. When we say a
+register “stores a pointer” or “points” to an address, this essentially means that
+the register is storing that target address.
+
+- `ESP` (The Stack Pointer)
+- `EBP` (The Base Pointer)
+- `EIP` (Instruction Pointer): stores the address of the instruction that will be excuted next but can not be accessed directly. Shellcode relies on indirect approaches to determine EIP.
 
 ### Segment Registers
 
@@ -135,9 +140,6 @@ Usage:
 	S Indicates a Status Flag 
 	C Indicates a Control Flag
 	X Indicates a System Flag
-
-- **EIP** - Instruction Pointer 
-- EIP stores the address of the instruction that will be excuted next but can not be accessed directly. Shellcode relies on indirect approaches to determine EIP.
 
 ### (FPU) Floating Point Unit or x87
 	R7, R6, R5, R4, R3, R2, R1, R0 (8 bit)
