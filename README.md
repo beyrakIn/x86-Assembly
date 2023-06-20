@@ -1,5 +1,9 @@
 # x86 Assembly Language and Shellcoding on Linux
 
+
+**Check this out [Bottom 2 Up](https://www.bottomupcs.com/)**
+
+
 -   Computer Architecture Basics
 -   IA-32/64 Family
 -   Compilers, Assemblers and Linkers
