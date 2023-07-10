@@ -2,6 +2,7 @@
 
 
 **Check this out [Bottom 2 Up](https://www.bottomupcs.com/)**
+</br>**[Online x86 / x64 Assembler and Disassembler](https://defuse.ca/online-x86-assembler.htm)**
 
 
 -   Computer Architecture Basics
