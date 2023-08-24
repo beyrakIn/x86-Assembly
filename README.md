@@ -156,8 +156,13 @@ the register is storing that target address.
 ## Sections
 
 - `section .data` The data section is used for declaring initialized data or constants.
-- `section .bss` The bss section is used for declaring variables. *(block started by symbol)*
+- `section .bss` The bss section is used for declaring variables *(Uninitialized data)*
 - `section .text` The text section is used for keeping the actual code.
+- `section .rdata` Const/read-only (and initialized) data
+- `section .edata` Export descriptors
+- `section .idata` Import descriptors
+- `section .reloc` Relocation table (for code instructions with absolute addressing when the module could not be loaded at its preferred base address)
+- `section .rsrc` Resources (icon, bitmap, dialog, ...)
 
 
 ## System calls
