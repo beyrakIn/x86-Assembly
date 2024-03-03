@@ -115,12 +115,12 @@ the register is storing that target address.
 
 ### Segment Registers
 
-	CS - Code
-	DS - Data
-	SS - Stack
-	ES - Data
-	FS - Data
-	GS - Data (16 bit)
+	CS - Code Segment
+	DS - Data Segment
+	SS - Stack Segment
+	ES - Extra Segment
+	FS - General Purpose Segment
+	GS - General Purpose Segment
 
 ### EFLAGS Registers
 
